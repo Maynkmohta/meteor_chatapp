@@ -1,0 +1,35 @@
+<head>
+  <title>chat</title>
+</head>
+
+<body>
+    <div class="container">
+  {{> loginButtons}}
+
+  <h1>Welcome to My chat boot!</h1>
+     
+        <div class="card">
+  {{> chat}}
+            </div>
+        </div>
+    <div class="footer">
+   <span class="glyphicon glyphicon-wrench"></span> Mayank &#169; <span class="glyphicon glyphicon-sunglasses"></span>
+    </div>
+</body>
+
+<template name="chat">
+  {{#each messages}}
+    <p>{{text}}</p>
+    {{timestamp}}
+    <hr>
+  {{/each}}
+
+<form role="form">
+  <div class="form-group">
+    <label for="message">Enter your Message: </label>
+    <textarea class="form-control" id="message" placeholder="Please enter your text to send"></textarea>
+  </div>
+</form>
+  
+ <center> <p><button class="clickable btn btn-info">Submit</button></p></center>
+</template>
