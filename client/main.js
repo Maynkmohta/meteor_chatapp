@@ -1,4 +1,3 @@
-Messages = new Mongo.Collection('messages');
 var messagesLimit = 5;
   Meteor.subscribe('messages', messagesLimit);
 
