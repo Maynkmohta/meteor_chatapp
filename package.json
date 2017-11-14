@@ -1,5 +1,5 @@
 {
-  "name": "chat",
+  "name": "meteor_chat",
   "private": true,
   "scripts": {
     "start": "meteor run"
